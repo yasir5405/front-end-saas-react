@@ -78,7 +78,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="min-h-[80vh] w-full text-center flex flex-col mt-[20px] py-[20px] px-[5px]">
+    <div className="min-h-[80vh] w-full text-center flex flex-col mt-[70px] py-[20px] px-[5px]">
       <h1 className="text-[23px] md:text-[38px] lg:text-[38px] font-semibold capitalize">
         What our clients say about us
       </h1>
