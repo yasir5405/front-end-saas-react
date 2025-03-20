@@ -7,7 +7,7 @@ const Box = ({ image, title, text, className }) => {
       className={`h-[50vh] mt-[20px] w-full shadow-xl flex flex-col items-center justify-center gap-[20px] text-center px-[10px] ${className}`}
     >
       <div className="h-12 w-12 md:h-16 md:w-16 lg:h-16 lg:w-16 bg-white flex items-center justify-center overflow-hidden">
-        <img className="h-full w-full object-contain" src={image} alt="" />
+        <img className="h-full w-full object-contain" src={image} alt={title} />
       </div>
       <h1 className="text-[24px] md:text-[32px] lg:text-[32px] font-medium">
         {title}
@@ -52,11 +52,11 @@ const Featues = () => {
       </div>
 
       {/* Features div */}
-      <div className="w-full min-h-[50vh] md:min-h-[50vh] lg:min-h-[50vh]  flex flex-col md:flex-row lg:flex-row items-center justify-between px-[10px] gap-[10px] py-[10px]">
+      <div className="animate-fadeIn w-full min-h-[50vh] md:min-h-[50vh] lg:min-h-[50vh]  flex flex-col md:flex-row lg:flex-row items-center justify-between px-[10px] gap-[20px] md:gap-[10px] lg:gap-[10px] py-[10px]">
         {features.map(({ image, title, text }, index) => (
           <Box
             className={
-              "hover:shadow-2xl hover:scale-105 transition-all ease-linear duration-300"
+              "hover:shadow-2xl hover:scale-105 transition-all ease-linear duration-300 cursor-pointer"
             }
             image={image}
             key={index}

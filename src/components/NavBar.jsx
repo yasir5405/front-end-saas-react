@@ -17,7 +17,7 @@ const NavBar = () => {
 
   return (
     <nav className="w-full h-[60px] shadow-xl flex items-center justify-between px-[40px] relative">
-      <h1 className="font-medium text-[32px]">Logo</h1>
+      <h1 className="font-medium text-[24px] md:text-[28px] lg:text-[28px]">TaskWave</h1>
 
       <div className="h-full px-[20px] lg:flex md:flex items-center justify-center gap-[30px] hidden">
         {navLinks.map((nav) => (
